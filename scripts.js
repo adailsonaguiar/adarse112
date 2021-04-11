@@ -4,4 +4,13 @@ const copyText = document.getElementById("copyText");
 copyBtn.onclick = () => {
   copyText.select();
   document.execCommand("copy");
+  Swal.fire({
+    // position: "top-end",
+    icon: "success",
+    title: "Copiado para sua área de transferência",
+    text: "Cole a chave PIX no App do seu banco.",
+    showConfirmButton: true,
+    confirmButtonText: 'Ok',
+    showConfirmButton: false,
+  });
 };
