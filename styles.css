@@ -109,4 +109,9 @@ main small {
   header {
     padding: 0.5rem 1rem;
   }
+
+  .back-over {
+    height: 20rem;
+  }
+  
 }
