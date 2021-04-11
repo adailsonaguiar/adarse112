@@ -1,3 +1,9 @@
+:root {
+  --color-white: rgba(255, 255, 255, 1);
+  --color-primary: #462697;;
+  --color-btn-success: #0bbcac;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,23 +16,40 @@ html {
 }
 
 header {
-  background-color: rgba(71, 74, 154, 100);
-  height: 66px;
+  background-color: var(--color-primary);
+  height: 6.4rem;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 3rem;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo-wrapper {
+  display: flex;
   align-items: center;
 }
 
 header .logo {
-  width: 50px;
+  width: 5.5rem;
 }
 
 header .slogan {
-  color: #fff;
-  font-size: 1.8rem;
-  margin-left: 2rem;
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-left: 1rem;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header nav a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.25px;
 }
 
 main {
@@ -37,31 +60,41 @@ main {
   padding-top: 2rem;
 }
 
+.back-over {
+  width: 100vw;
+  height: 25rem;
+  background: var(--color-primary);
+  position: absolute;
+  z-index: -1;
+}
+
 main .msg-main {
   font-size: 2.8rem;
+  color: var(--color-white);
   text-align: center;
 }
 
 main .qrcode {
-  width: 19rem;
+  width: 14rem;
   margin-top: 2rem;
 }
 
 main input {
   height: 5rem;
-  border: 1px solid #000;
+  border: 1px solid rgb(220 220 220);
   border-radius: 0.6rem;
   margin-top: 1rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.9rem;
+  outline: none;
 }
 
 main button {
-  background: #0bbcac;
+  background: var(--color-btn-success);
   border: 0;
   height: 4.6rem;
-  padding: 0 1rem;
+  padding: 0 11rem;
   border-radius: 0.6rem;
-  color: #fff;
+  color: var(--color-white);
   font-weight: 600;
   margin-top: 1rem;
 }
