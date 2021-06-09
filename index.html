@@ -7,40 +7,80 @@
     <title>AD ARSE 112</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <script src="sweetalert2.min.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
+      id="sanfran-google-font-inter-css"
+      href="//fonts.googleapis.com/css?family=Inter%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin&amp;ver=5.5.3"
+      type="text/css"
+      media="all"
     />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div class="logo-wrapper">
-        <img class="logo" src="/assets/logoad112.svg" alt="logo ad arse 112" />
-        <p class="slogan">A igreja da comunhão</p>
+      <div class="container">
+        <div class="head-wrapper">
+          <div class="logo-wrapper">
+            <a href="/">
+              <img
+                class="logo"
+                src="/assets/adarse112.png"
+                alt="logo ad arse 112"
+              />
+            </a>
+          </div>
+          <nav>
+            <a href="#">Mídia</a>
+            <a href="#">Ofertas</a>
+          </nav>
+          <a onclick="toggleMenu()" class="btn-main-menu">
+            <span class="material-icons">menu</span>
+          </a>
+        </div>
       </div>
-      <nav>
-        <a href="#">Ofertas</a>
-      </nav>
     </header>
-    <div class="back-over"></div>
+
+    <div class="main-menu" onclick="toggleMenu()">
+      <div class="head"></div>
+      <nav>
+        <a>Mídia</a>
+        <a>Ofertas</a>
+        <a>Onde Estamos</a>
+      </nav>
+    </div>
+
     <main>
-      <p class="msg-main">
-        Contribua com seus <strong>dízimos e ofertas</strong>
-      </p>
-      <img class="qrcode" src="/assets/pixqr.png" alt="qrcode" />
-      <input
-        type="text"
-        id="copyText"
-        value="f5d92bce-a944-4085-a2b4-909640096256"
-        readonly="readonly"
-      />
-      <button id="copyBtn"><i class="ph-copy"></i>Copiar</button>
-      <small>*Copie nosso pix e cole no app do seu banco</small>
+      <section class="section-image">
+        <div class="overlay-image"></div>
+        <img src="/assets/bg.image.jpeg" alt="" />
+        <div class="container">
+          <h1>Nação Madureira</h1>
+          <h3>A IGREJA DA COMUNHÃO</h3>
+        </div>
+      </section>
+      <section class="local"></section>
+      <section class="ofertas">
+        <p class="msg-main">
+          Contribua com seus <strong>dízimos e ofertas</strong>
+        </p>
+        <img class="qrcode" src="/assets/pixqr.png" alt="qrcode" />
+        <input
+          type="text"
+          id="copyText"
+          value="f5d92bce-a944-4085-a2b4-909640096256"
+          readonly="readonly"
+        />
+        <button id="copyBtn"><i class="ph-copy"></i>Copiar</button>
+        <small>*Copie nosso pix e cole no app do seu banco</small>
+      </section>
     </main>
     <footer></footer>
     <script src="/scripts.js"></script>

@@ -10,7 +10,18 @@ copyBtn.onclick = () => {
     title: "Copiado para sua área de transferência",
     text: "Cole a chave PIX no App do seu banco.",
     showConfirmButton: true,
-    confirmButtonText: 'Ok',
+    confirmButtonText: "Ok",
     showConfirmButton: false,
   });
 };
+
+function toggleMenu() {
+  console.log('teste')
+  const mainMenu = document.querySelector(".main-menu");
+  const classListMenu = mainMenu?.classList;
+  if (!classListMenu?.contains("active")) {
+    mainMenu?.classList.add("active");
+  } else {
+    mainMenu?.classList.remove("active");
+  }
+}
