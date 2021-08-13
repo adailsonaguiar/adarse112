@@ -1,7 +1,10 @@
 :root {
   --color-white: rgba(255, 255, 255, 1);
   --color-primary: #181818;
-  --color-btn-success: #0bbcac;
+  --color-btn-success: #0226a0;
+  --color-main-darker: #00155e;
+  --color-gray-10: ##f8f8f8;
+  --color-gray-100: #f1f1f1;
   --color-gray-800: #545454;
 
   --elevation-z-top: 999;
@@ -94,14 +97,13 @@ main .section-image h3 {
 
 main .qrcode {
   width: 14rem;
-  margin-top: 2rem;
 }
 
 main input {
   height: 5rem;
   border: 1px solid rgb(220 220 220);
   border-radius: 0.6rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 0.2rem 0.9rem;
   outline: none;
 }
@@ -114,7 +116,13 @@ main button {
   border-radius: 0.6rem;
   color: var(--color-white);
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background 250ms ease-in-out;
+}
+
+main button:hover {
+  background: var(--color-main-darker);
 }
 
 main small {
@@ -140,12 +148,14 @@ main small {
 }
 
 main .section-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-  padding-top: 6.5rem;
+  padding: 7rem 0;
   width: 100%;
+}
+
+main .section-wrapper .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .map-wrapper {
@@ -164,13 +174,12 @@ main .section-wrapper {
 }
 
 .heading {
-  font-size: 2.6rem;
+  font-size: 5.4rem;
   padding-left: 1rem;
-  border-left: 5px solid var(--color-btn-success);
-  color: var(--color-gray-800);
-  font-weight: 600;
-  width: 100%;
-  margin-bottom: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: rgb(17, 17, 17);
+  text-align: center;
 }
 
 @media screen and (max-width: 720px) {
@@ -182,4 +191,20 @@ main .section-wrapper {
   main .section-image h3 {
     letter-spacing: 8px;
   }
+
+  .heading {
+    font-size: 4.4rem;
+  }
+
+  main .section-image h1 {
+    font-size: 4rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-10 {
+  margin-top: 2rem;
 }

@@ -1,0 +1,50 @@
+section.ofertas {
+  background-color: var(--color-gray-100);
+}
+
+section.ofertas .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+section.ofertas .pix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.ofertas .bank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.ofertas .heading2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: var(--color-btn-success);
+  text-align: center;
+}
+
+section.ofertas .bank .name {
+  font-size: 2rem;
+}
+
+section.ofertas .bank p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+
+@media (max-width: 700px) {
+  section.ofertas .grid {
+    grid-template-columns: 1fr;
+  }
+
+  section.ofertas .pix {
+    margin-bottom: 3rem;
+  }
+}

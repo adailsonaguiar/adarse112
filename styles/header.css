@@ -43,6 +43,12 @@ header nav a {
   letter-spacing: 2.25px;
   text-transform: uppercase;
   margin-left: 2rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+header nav a:hover {
+  color: var(--color-btn-success);
 }
 
 .main-menu nav {
@@ -61,6 +67,10 @@ header nav a {
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+}
+
+.main-menu nav a:hover {
+  color: var(--color-main-darker);
 }
 
 @media screen and (max-width: 720px) {
