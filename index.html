@@ -25,29 +25,43 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/ofertas.section.css" />
     <link rel="stylesheet" href="styles/cultos.section.css" />
+    <link rel="stylesheet" href="styles/player.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="head-wrapper">
-          <div class="logo-wrapper">
-            <a href="#">
-              <img
-                class="logo"
-                src="/assets/adarse112.png"
-                alt="logo ad arse 112"
-              />
-            </a>
-          </div>
-          <nav data-js="menu-nav"></nav>
-          <a onclick="toggleMenu()" class="btn-main-menu">
-            <span class="material-icons">menu</span>
-          </a>
+    <div class="top-container">
+      <div class="player-wrapper">
+        <div class="container">
+          <iframe
+            src="player.html"
+            frameborder="0"
+            noresize="noresize"
+            scrolling="no"
+          ></iframe>
+          <h3 class="radio-paz">Rádio Paz Palmas... | 89,9</h3>
         </div>
       </div>
-    </header>
+      <header>
+        <div class="container">
+          <div class="head-wrapper">
+            <div class="logo-wrapper">
+              <a href="#">
+                <img
+                  class="logo"
+                  src="/assets/adarse112.png"
+                  alt="logo ad arse 112"
+                />
+              </a>
+            </div>
+            <nav data-js="menu-nav"></nav>
+            <a onclick="toggleMenu()" class="btn-main-menu">
+              <span class="material-icons">menu</span>
+            </a>
+          </div>
+        </div>
+      </header>
+    </div>
 
     <div class="main-menu" onclick="toggleMenu()">
       <div class="head"></div>
@@ -104,7 +118,7 @@
           </div>
         </div>
       </section>
-      <section id="section-ofertas" class="section-wrapper ofertas">
+      <section id="dizimos" class="section-wrapper ofertas">
         <div class="container">
           <h2 class="heading">Dízimos e Ofertas</h2>
 
@@ -137,47 +151,6 @@
             </div>
           </div>
         </div>
-        <!-- <audio id="radio-player" controls="" autoplay="" loop="">
-          <track kind="captions" />
-          <source
-            src="https://tudo.radio/proxy/srv01.brasilstream.com.br:8030/stream"
-            type="audio/mpeg"
-          />
-          <source
-            src="https://tudo.radio/proxy/srv01.brasilstream.com.br:8030/stream.m3u"
-            type="audio/mpeg"
-          />
-          <source
-            src="http://srv01.brasilstream.com.br:8030/stream"
-            type="audio/mpeg"
-          />
-          <source
-            src="https://tudo.radio/proxy/srv01.brasilstream.com.br:8030/stream"
-            type="audio/mpeg"
-          />
-          Seu navegador não suporta o elemento audio
-        </audio> -->
-        <audio id="player" id="radio-player" controls="" autoplay="" loop="">
-          <source
-            src="http://8030.brasilstream.com.br/stream?identifica=5360246618292850000"
-            type="audio/mpeg"
-          />
-          <source
-            src="http://8030.brasilstream.com.br/mp3?identifica=5360246618292850000"
-            type="audio/mpeg"
-          />
-          <source
-            src="http://8030.brasilstream.com.br/stream.m3u?identifica=5360246618292850000"
-            type="audio/mpegurl"
-          />
-          <source
-            src="http://8030.brasilstream.com.br/mp3.m3u?identifica=5360246618292850000"
-            type="audio/mpegurl"
-          />
-          <a href="http://8030.brasilstream.com.br/stream.m3u"
-            >Clique Aqui para Ouvir!</a
-          >
-        </audio>
       </section>
     </main>
     <footer>

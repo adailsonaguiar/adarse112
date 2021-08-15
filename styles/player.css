@@ -1,0 +1,36 @@
+:root {
+  --plyr-color-main: #2e3ee8;
+  --plyr-control-icon-size: 12px;
+  --plyr-control-spacing: 5px;
+  --plyr-audio-controls-background: #00155e;
+  --plyr-audio-control-color: #fff;
+  --plyr-audio-control-color-hover: var(--color-gray-200);
+}
+
+.player-wrapper {
+  background: var(--color-main-darker);
+}
+
+.player-wrapper .container {
+  display: flex;
+  align-items: center;
+}
+
+.plyr__progress,
+.plyr__time,
+.plyr__menu {
+  display: none !important;
+}
+
+iframe {
+  height: 50px;
+  display: block;
+
+  padding: 0;
+}
+
+iframe body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}

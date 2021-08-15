@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AD ARSE 112</title>
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+
+    <link rel="stylesheet" href="styles/player.css" />
+  </head>
+  <body>
+    <div class="player-wrapper">
+      <audio id="player" preload="auto" autoplay disableContextMenu resetOnEnd>
+        <source
+          src="http://8030.brasilstream.com.br/stream?identifica=5360246618292850000"
+          type="audio/mpeg"
+        />
+        <source
+          src="http://8030.brasilstream.com.br/mp3?identifica=5360246618292850000"
+          type="audio/mpeg"
+        />
+        <source
+          src="http://8030.brasilstream.com.br/stream.m3u?identifica=5360246618292850000"
+          type="audio/mpegurl"
+        />
+        <source
+          src="http://8030.brasilstream.com.br/mp3.m3u?identifica=5360246618292850000"
+          type="audio/mpegurl"
+        />
+        <a href="http://8030.brasilstream.com.br/stream.m3u"
+          >Clique Aqui para Ouvir!</a
+        >
+      </audio>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+    <script>
+      const player = new Plyr("#player");
+    </script>
+  </body>
+</html>

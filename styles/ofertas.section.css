@@ -6,18 +6,31 @@ section.ofertas .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  grid-gap: 3rem;
 }
 
 section.ofertas .pix {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--color-main-darker);
+  border-radius: 0.7rem;
+  padding: 5rem 4rem;
+  -webkit-box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.5);
+  color: var(--color-gray-200);
 }
 
 section.ofertas .bank {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--color-main-darker);
+  border-radius: 0.7rem;
+  padding: 5rem 4rem;
+  -webkit-box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.5);
+  color: var(--color-gray-200);
 }
 
 section.ofertas .heading2 {
@@ -25,12 +38,17 @@ section.ofertas .heading2 {
   font-weight: 600;
   margin-bottom: 2rem;
   width: 100%;
-  color: var(--color-btn-success);
+  color: var(--color-white);
   text-align: center;
+}
+
+section.ofertas .bank .heading2 {
+  color: #fff;
 }
 
 section.ofertas .bank .name {
   font-size: 2rem;
+  color: var(--color-gray-200);
 }
 
 section.ofertas .bank p {
@@ -46,5 +64,15 @@ section.ofertas .bank p {
 
   section.ofertas .pix {
     margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  section.ofertas .pix {
+    padding: 5rem 2rem;
+  }
+
+  section.ofertas .bank {
+    padding: 5rem 2rem;
   }
 }

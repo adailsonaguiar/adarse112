@@ -1,7 +1,7 @@
 var menuNavs = [
   { label: "Cultos", link: "#cultos" },
   { label: "Onde Estamos", link: "#onde-estamos" },
-  { label: "Ofertas", link: "#section-ofertas" },
+  { label: "Ofertas", link: "#dizimos" },
 ];
 
 var menuNav = document.querySelectorAll('[data-js="menu-nav"]');
