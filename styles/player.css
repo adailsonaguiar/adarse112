@@ -16,9 +16,14 @@
   align-items: center;
 }
 
+.plyr__controls {
+  justify-content: flex-start !important  ;
+}
+
 .plyr__progress,
 .plyr__time,
-.plyr__menu {
+.plyr__menu,
+.plyr__progress__container {
   display: none !important;
 }
 
@@ -33,4 +38,19 @@ iframe body {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+.plyr__controls__item:first-child {
+  margin-right: 0 !important;
+}
+
+.radio-paz {
+  color: var(--color-gray-100);
+  margin-left: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .radio-paz {
+    display: none;
+  }
 }
