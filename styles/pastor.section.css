@@ -1,0 +1,24 @@
+.pastor .container {
+  flex-direction: row !important;
+}
+
+.pastor .pr-info {
+  padding: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pastor .pr-info p {
+  font-size: 1.9rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+
+.pastor .container img {
+  height: 50rem;
+}
+
+.pastor .heading {
+  padding-left: 0;   
+}

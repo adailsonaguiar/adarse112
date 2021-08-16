@@ -18,9 +18,8 @@
 .horarios-wrapper .card h4 {
   font-size: 1.4rem;
   line-height: 3rem;
-  text-transform: uppercase;
-  color: #666;
-  font-weight: 500;
+  color: var(--color-main-darker);
+  font-weight: 600;
   width: 100%;
   text-align: center;
   border-bottom: 1px solid #cccccc;
@@ -31,6 +30,7 @@
   font-size: 1.15rem;
   width: 100%;
   text-align: center;
+  font-weight: 300;
 }
 
 @media (max-width: 1170px) {

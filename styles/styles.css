@@ -177,11 +177,11 @@ main .section-wrapper .container {
 }
 
 .heading {
-  font-size: 5.4rem;
+  font-size: 3.4rem;
   padding-left: 1rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  color: rgb(17, 17, 17);
+  color: var(--color-main-darker);
   text-align: center;
 }
 
