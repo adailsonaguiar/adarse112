@@ -1,5 +1,6 @@
 .pastor .container {
   flex-direction: row !important;
+  align-items: flex-start !important;
 }
 
 .pastor .pr-info {
@@ -11,14 +12,34 @@
 
 .pastor .pr-info p {
   font-size: 1.9rem;
-  line-height: 3rem;
+  line-height: 4rem;
   font-weight: 300;
 }
 
 .pastor .container img {
-  height: 41rem;
+  height: 35rem;
+  align-self: flex-end;
 }
 
 .pastor .heading {
-  padding-left: 0;   
+  padding-left: 0;
+}
+
+@media (max-width: 700px) {
+  .pastor .container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .pastor .container img {
+    height: 24rem;
+  }
+
+  .pastor .pr-info {
+    padding: 0;
+  }
+
+  .pastor .container img {
+    align-self: center;
+  }
 }
