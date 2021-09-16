@@ -38,8 +38,22 @@
 
     <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
     <script>
-      const player = new Plyr("#player");
-      player.play();
+      var promise = new Promise(function (resolve, reject) {
+        const player = new Plyr("#player");
+
+        if (player) {
+          resolve(player);
+        } else {
+          reject(Error("Plyr isn't initialized"));
+        }
+      });
+      promise
+        .then(function (player) {
+          player.play();
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
     </script>
   </body>
 </html>
