@@ -17,14 +17,17 @@
 .plyr__progress__container {
   display: none !important;
 }
-
 .plyr__volume {
   width: inherit;
 }
-
-.plyr__control svg {
+button.plyr__control {
   width: 2rem;
   height: 2rem;
+}
+
+.plyr__control svg {
+  width: 100%;
+  height: 100%;
 }
 
 iframe {
