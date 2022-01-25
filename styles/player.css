@@ -2,18 +2,9 @@
   --plyr-color-main: #2e3ee8;
   --plyr-control-icon-size: 12px;
   --plyr-control-spacing: 5px;
-  --plyr-audio-controls-background: #00155e;
+  --plyr-audio-controls-background: transparent;
   --plyr-audio-control-color: #fff;
   --plyr-audio-control-color-hover: var(--color-gray-200);
-}
-
-.player-wrapper {
-  background: var(--color-main-darker);
-}
-
-.player-wrapper .container {
-  display: flex;
-  align-items: center;
 }
 
 .plyr__controls {
@@ -25,6 +16,15 @@
 .plyr__menu,
 .plyr__progress__container {
   display: none !important;
+}
+
+.plyr__volume {
+  width: inherit;
+}
+
+.plyr__control svg {
+  width: 2rem;
+  height: 2rem;
 }
 
 iframe {
@@ -52,11 +52,18 @@ iframe body {
 
 .radio-paz {
   color: var(--color-gray-100);
-  margin-left: 4rem;
 }
 
 @media (max-width: 1000px) {
   .radio-paz {
     display: none;
   }
+}
+
+.plyr__controls__item input {
+  display: none !important;
+}
+
+button.plyr__controls__item {
+  display: none;
 }
