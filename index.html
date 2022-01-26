@@ -44,16 +44,29 @@
     <script>
       var music = document.getElementById("music"); // id for audio element
       var pButton = document.getElementById("pButton"); // play button
-      music.play();
-      pButton.className = "pause";
+      try {
+        music.play();
+        pButton.className = "pause";
+        console.log("@TOCANDO RADIO PAZ FM...");
+      } catch (error) {
+        pButton.className = "play";
+      }
 
       function onMute() {
-        if (music.muted) {
-          music.muted = false;
+        if (music.paused) {
+          music.play();
           pButton.className = "pause";
+          console.log("@TOCANDO RADIO PAZ FM...");
         } else {
-          music.muted = true;
-          pButton.className = "play";
+          if (music.muted) {
+            music.muted = false;
+            pButton.className = "pause";
+            console.log("@TOCANDO RADIO PAZ FM (COM SOM)...");
+          } else {
+            music.muted = true;
+            pButton.className = "play";
+            console.log("@TOCANDO RADIO PAZ FM (SEM SOM)...");
+          }
         }
       }
 

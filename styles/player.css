@@ -22,3 +22,7 @@
 .pause .fa-play {
   display: none;
 }
+
+body{
+  background-color: tomato;
+}
