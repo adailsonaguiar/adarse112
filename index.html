@@ -5,14 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles/player.css" />
   </head>
   <body>
     <div class="player-wrapper">
-      <audio id="player" preload="auto" autoplay disableContextMenu resetOnEnd>
+      <audio id="music" preload="true">
         <source
           src="https://8030.brasilstream.com.br/stream?identifica=5360246618292850000"
           type="audio/mpeg"
@@ -33,26 +35,29 @@
           >Clique Aqui para Ouvir!</a
         >
       </audio>
+      <button id="pButton" class="play">
+        <i class="fas fa-pause"></i>
+        <i class="fas fa-play"></i>
+      </button>
     </div>
 
-    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
     <script>
-      var promise = new Promise(function (resolve, reject) {
-        const player = new Plyr("#player");
+      var music = document.getElementById("music"); // id for audio element
+      var pButton = document.getElementById("pButton"); // play button
+      music.play();
+      pButton.className = "pause";
 
-        if (player) {
-          resolve(player);
+      function onMute() {
+        if (music.muted) {
+          music.muted = false;
+          pButton.className = "pause";
         } else {
-          reject(Error("Plyr isn't initialized"));
+          music.muted = true;
+          pButton.className = "play";
         }
-      });
-      promise
-        .then(function (player) {
-          player.play();
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
+      }
+
+      pButton.addEventListener("click", onMute);
     </script>
   </body>
 </html>
